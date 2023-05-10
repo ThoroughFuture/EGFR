@@ -1,0 +1,20 @@
+# Preprocessing
+DATA_DIR = 'EGFR'
+CLASS_NUM = 1
+TRAIN_LIST = 'train_EGFR.csv'
+TEST_LIST = 'test_EGFR.csv'
+
+# Data
+IMAGE_HEIGHT = 320
+IMAGE_WIDTH = 320
+IMAGE_CHANNEL = 3
+
+# Train
+BATCH_SIZE = 64
+TRAIN_ITERATION = 100000
+SAVE_INTERVAL = 1000
+CHECKPOINT_DIR = 'resnet_50'
+
+# Test
+RESTORE_FROM = 'EGFR/resnet_50/model.ckpt-30000'
+MODEL_PREFIX = '%s/model.ckpt-%s'
